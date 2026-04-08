@@ -1,0 +1,15 @@
+# Dependências (O mais importante)
+node_modules/
+
+# Arquivos de log do npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configurações de IDE (VS Code)
+.vscode/
+
+# Build e arquivos temporários
+dist/
+build/
+.expo/
