@@ -30,7 +30,7 @@ const InputWithLabel = (props) => {
 };
 
 // --- CLASSE PARA FORMULARIO DO PET (ETAPA 2, 5 e 7) ---
-export default function FormularioPet() {
+export default function FormularioPet({ navigation }) {
   // Função de validação para os extras (Campos vazios e formato de data)
   const validar = (values) => {
     const errors = {};
@@ -70,14 +70,17 @@ export default function FormularioPet() {
         validate={validar}
         onSubmit={(values) => {
           // ETAPA 4 e 7: Verificação de senha movida para o onSubmit
+
           if (values.senha !== values.confirmarSenha) {
             Alert.alert('Erro', 'As senhas não coincidem, por favor tente novamente.');
             return;
           }
           
-          // ETAPA 7: Inspecionando os dados no console
           console.log(values);
           Alert.alert('Sucesso', 'Dados do pet salvos com sucesso!');
+          
+          // Essencial para a navegação:
+          navigation.navigate('Main');
         }}
       >
         {({ handleChange, handleSubmit, values, errors, touched }) => (

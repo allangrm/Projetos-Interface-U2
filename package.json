@@ -1,26 +1,26 @@
 {
-  "name": "projetos-interface-u2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "App.js",
+  "license": "0BSD",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/allangrm/Projetos-Interface-U2.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/allangrm/Projetos-Interface-U2/issues"
-  },
-  "homepage": "https://github.com/allangrm/Projetos-Interface-U2#readme",
   "dependencies": {
-    "formik": "^2.4.9",
-    "react": "^19.2.4",
-    "react-native": "^0.85.0"
-  }
+    "@expo/vector-icons": "^15.0.3",
+    "@react-navigation/bottom-tabs": "*",
+    "@react-navigation/native": "*",
+    "@react-navigation/stack": "*",
+    "expo": "~54.0.33",
+    "expo-status-bar": "~3.0.9",
+    "formik": "*",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-paper": "4.9.2",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0"
+  },
+  "private": true
 }
